@@ -5,11 +5,18 @@ import { darkTheme } from './utils/Themes.js'
 
 import HeroSection from "./components/HeroSection";
 
+import Experience from './components/Experience';
+
+import Education from './components/Education';
+
 import Skills from "./components/Skills";
 
 import Navbar from "./components/Navbar";
 
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 import { BrowserRouter as Router } from 'react-router-dom';
+import Projects from './components/Projects/index.js';
 const Body=styled.div`
 background-color:${({theme})=>theme.bg};
 width:100%;
@@ -32,9 +39,12 @@ function App() {
           <HeroSection/>
           <Wrapper>
           <Skills/>
-          {/* <Education/> */}
+          <Experience/>
+          <Projects/>
+          <Education/> 
+          <Contact/>
           </Wrapper>
-      
+          <Footer/>
       </Body>
 
       </Router>
